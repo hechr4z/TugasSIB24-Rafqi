@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="background-form">
+        <img src="background.jpg" alt="Background Form">
+    </div>
+    <form action="index.html" method="post" enctype="multipart/form-data">
+        <div id="back-home">
+            <a href="index.html">
+                <img src="back.png" alt="Back">
+            </a>
+        </div>
+        <div>
+            <br><label for="nama">Nama</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required><br>
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Email Aktif" required><br>
+        </div>
+        <div>
+            <label for="no_hp">No HP</label><br>
+            <input type="tel" id="no_hp" name="no_hp" placeholder="No HP Aktif" required><br>
+        </div>
+        <div>
+            <label for="jenis_kelamin">Jenis Kelamin</label><br>
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
+            <label for="laki-laki">Laki-Laki</label><br>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+        </div>
+        <div>
+            <label for="prodi">Prodi</label><br>
+            <select id="prodi" name="prodi">
+                <option value="pilih">Pilih</option>
+                <option value="prodi1">Prodi 1</option>
+                <option value="prodi2">Prodi 2</option>
+                <option value="prodi3">Prodi 3</option>
+                <option value="prodi4">Prodi 4</option>
+                <option value="prodi5">Prodi 5</option>
+            </select><br>
+        </div>
+        <div>
+            <label for="hobi">Hobi</label><br>
+            <input type="checkbox" id="membaca" name="hobi" value="membaca">
+            <label for="membaca">Membaca</label><br>
+            <input type="checkbox" id="menulis" name="hobi" value="menulis">
+            <label for="menulis">Menulis</label><br>
+            <input type="checkbox" id="menyanyi" name="hobi" value="menyanyi">
+            <label for="menyanyi">Menyanyi</label><br>
+            <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+            <label for="olahraga">Olahraga</label><br><br>
+        </div>
+        <div>
+            <label for="alamat">Alamat</label><br>
+            <textarea id="alamat" name="alamat" placeholder="Alamat Lengkap" required></textarea><br>
+        </div>
+        <div>
+            <label for="foto">Foto Diri</label><br>
+            <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+        </div>
+        <!-- Wrap the button in a div and center it -->
+        <div class="button-wrapper">
+            <button type="submit">Daftar</button>
+        </div>
+    </form>
+</body>
+
+</html>
