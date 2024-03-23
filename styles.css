@@ -92,3 +92,23 @@ p {
 .hidden {
     display: none;
 }
+
+.button {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: inherit;
+}
+
+.button:hover {
+    background-color: lightgrey;
+}
+
+#form-button, .button {
+    font-size: 16px; /* Menetapkan ukuran font yang sama untuk kedua tombol */
+}
