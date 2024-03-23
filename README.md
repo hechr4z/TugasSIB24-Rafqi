@@ -1,1 +1,1 @@
-Tugas Pertemuan 6 Javascript Dasar - Arkatama (by Rafqi Putra)
+Tugas Arkatama (by Rafqi Putra)
