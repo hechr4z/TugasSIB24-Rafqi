@@ -1,0 +1,59 @@
+/* api-responsive-style.css */
+
+body {
+    background-image: url('background-api.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(33.33% - 40px);
+    /* 3 kolom pada layar besar */
+    max-width: 300px;
+    /* lebar maksimum untuk setiap kartu */
+    background-color: white;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+#back-home img {
+    width: 25px;
+    height: auto;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 30px);
+        /* 2 kolom pada layar sedang */
+    }
+}
+
+/* Responsif untuk layar sangat kecil (misalnya, ponsel) */
+@media screen and (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 20px);
+        /* 1 kolom pada layar kecil */
+    }
+}
