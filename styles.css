@@ -8,15 +8,6 @@ body {
     overflow: hidden;
 }
 
-#form-button {
-    border-radius: 20px;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border: 2px solid black;
-    cursor: pointer;
-}
-
 #form-button:hover {
     background-color: lightgrey;
 }
@@ -44,6 +35,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    padding: 0 20px;
+    width: calc(100% - 40px);
 }
 
 h1 {
